@@ -1,4 +1,4 @@
-# C Practice Problems
+# C_Practice_Problems
 
 A collection of 10 fundamental C programming problems to practice basic concepts like input/output, arithmetic operations, conditional statements, and variables.
 
