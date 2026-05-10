@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.project{
+    background: #D3CCE3;
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header h1{
+    font-size: 35px;
+    transition: all 0.3s ease;
+}
+.header h1:hover{
+    color:#764ba2;
+    transform: scale(1.1);
+}
+.header a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+.header a:hover{
+    color: #667eea;
+    transform: translateY(-2px);
+}
+.header a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #667eea;
+    transition: width 0.3s ease;
+}
+.header a:hover::after{
+    width: 100%;
+}
+.header i{
+    margin-left: 30px;
+}
+.header input{
+    margin-left: -320px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.header input:focus{
+    border-color: #667eea;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+    transform: scale(1.02);
+}
+
+.project img{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 400px;
+    height: auto;
+    z-index: 1;
+    border-radius: 80px;
+    transition: all 0.5s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.circle1{
+    position: absolute;
+    top: 150px;
+    right: 150px;
+}
+
+.circle1 #first{
+    width: 300px;
+    height: 300px;
+    background: rgba(102, 126, 234, 0.3);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+}
+
+.circle2{
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
+
+.circle2 #second{
+    width: 150px;
+    height: 150px;
+    background: rgba(118, 75, 162, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: pulse 2.5s ease-in-out infinite 0.5s;
+}
+
+.circle2 #third{
+    width: 100px;
+    height: 100px;
+    background: rgba(102, 126, 234, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    animation: pulse 3s ease-in-out infinite 1s;
+}
+
+.circle2 #forth{
+    width: 50px;
+    height: 50px;
+    background: rgba(118, 75, 162, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    animation: pulse 3.5s ease-in-out infinite 1.5s;
+}
+
+.content{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    z-index: 2;
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content h2{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+.content h2:hover{
+    color: #667eea;
+    transform: translateX(5px);
+}
+
+.content h1{
+    font-size: 48px;
+    color: #667eea;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+.content h1:hover{
+    transform: scale(1.05);
+    text-shadow: 2px 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+.content p{
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    display: flex;
+}
+.content .typing{
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #667eea;
+    width: 0;
+    animation: typing 5s steps(19) infinite alternate, blink 0.8s step-end infinite;
+}
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 19ch;
+    }
+}
+.content p:hover{
+    color: #333;
+    transform: translateX(3px);
+}
+
+
+.content button{
+    padding: 12px 30px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.box1{
+    background: #667eea;
+    color: #fff;
+}
+
+.box1:hover{
+    background: #764ba2;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.box2{
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.box2:hover{
+    background: #667eea;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.icon{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    z-index: 2;
+}
+
+.icon a{
+    font-size: 24px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.icon a:hover{
+    transform: scale(1.2) rotate(10deg);
+}
+
+
+@media (max-width: 1024px) {
+    .project img{
+        width: 300px;
+        right: 50px;
+    }
+    
+    .content h1{
+        font-size: 36px;
+    }
+    
+    .circle1 #first{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .header a{
+        margin-left: 0;
+        margin: 5px;
+    }
+    
+    .header input{
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .project img{
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 250px;
+        margin: 20px auto;
+        display: block;
+    }
+    
+    .circle1, .circle2{
+        display: none;
+    }
+    
+    .content{
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .content h1{
+        font-size: 28px;
+    }
+    
+    .icon{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1{
+        font-size: 24px;
+    }
+    
+    .header a{
+        font-size: 14px;
+    }
+    
+    .content h1{
+        font-size: 24px;
+    }
+    
+    .content h2{
+        font-size: 18px;
+    }
+    
+    .content p{
+        font-size: 14px;
+    }
+    
+    .content button{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
