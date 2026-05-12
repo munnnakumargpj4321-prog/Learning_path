@@ -212,7 +212,48 @@ A personal portfolio landing page for a CSE student with modern design and socia
 
 
 
+## project 4:to do list
+
+this is a simple to do list application which is build using html, css and javascript
+
+
+
+### Features
+- Add tasks(Click on the + button to add a new task)
+- Mark tasks as complete(Click on the task to mark it as complete)
+- Delete tasks(Click on the delete button to delete a task)
+- Local storage(All tasks are saved in your browser)
+
+
+
+### Concepts Used
+- HTML5 structure
+- CSS3 styling
+- JavaScript for task management
+- Local storage for data persistence
+
+
+
+### Files
+- `todo_list.html` - Main HTML structure
+
+
+- `todo_list.css` - Styling
+
+
+- `todo_list.js` - JavaScript functionality
+
+
+### How to Run
+1. Open `small_project.html` in a web browser
+
+2. Click on the "To Do List" project to open the to do list application
+
+
+
+
 ---
+
 
 
 
