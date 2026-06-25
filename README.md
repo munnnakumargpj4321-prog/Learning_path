@@ -251,6 +251,38 @@ this is a simple to do list application which is build using html, css and javas
 
 
 
+---
+
+## Project 5: Simple Calculator
+
+A simple calculator application built with HTML, CSS, and JavaScript that performs basic arithmetic operations with a modern and colorful interface.
+
+### Features
+- Addition, subtraction, multiplication, and division operations
+- Two number input fields with validation
+- Colorful operation buttons with Font Awesome icons
+- Real-time result display
+- Reset functionality to clear inputs and results
+- Input validation (checks for empty inputs and division by zero)
+- Modern UI with hover effects and smooth transitions
+
+### Concepts Used
+- HTML5 form inputs
+- CSS3 styling with flexbox layout
+- JavaScript event listeners
+- DOM manipulation
+- Input validation
+- Font Awesome icons integration
+- CSS transitions and hover effects
+
+### Files
+- `simple_calculator.html` - Complete calculator application (HTML, CSS, and JavaScript in one file)
+
+### How to Run
+1. Open `simple_calculator.html` in a web browser
+2. Enter two numbers in the input fields
+3. Click on any operation button to see the result
+4. Click "Reset" to clear all inputs and results
 
 ---
 
