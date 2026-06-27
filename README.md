@@ -1,309 +1,206 @@
-# Programming Projects Collection
+# Learning Path
 
-
-
-A collection of programming projects including C practice problems and web development projects (HTML/CSS).
-
-
+This repository contains my programming practice and beginner-level projects. I use this repo to improve my coding skills by practicing C programming, HTML, CSS, and JavaScript.
 
 ---
 
+## 📌 What This Repository Includes
 
-
-## Project 1: C Practice Problems
-
-
-
-A collection of 20 fundamental C programming problems to practice basic concepts like input/output, arithmetic operations, conditional statements, switch statements, and variables.
-
-
-
-### Features
-
-- Student marks percentage calculation
-
-- Simple interest calculation
-
-- Area of circle and rectangle
-
-- Temperature calculator (Celsius to Fahrenheit)
-
-- Swap two numbers
-
-- Electricity bill calculator with tiered pricing
-
-- Salary calculator with allowances and deductions
-
-- Age to days converter
-
-- Even or odd number checker
-
-- Biggest of three numbers finder
-
-- ATM Withdrawal simulator with PIN verification
-
-- Login system with username and password
-
-- Grade calculator using switch statement
-
-- Leap year calculator
-
-- Movie ticket eligibility checker
-
-- Voting eligibility checker
-
-- Bonus calculator based on salary
-
-- Profit/loss calculator
-
-- Triangle validity checker
-
-- Mobile recharge offer checker
-
-
-
-### Concepts Used
-
-- Input/Output operations (printf, scanf)
-
-- Arithmetic operations
-
-- Conditional statements (if-else)
-
-- Variables and data types (int, float)
-
-- Mathematical formulas
-
-- Type conversion
-
-
-
-### Language/Technologies
-
-- C Programming Language
-
-
-
-### How to Run
-
-1. Compile the code: `gcc practice_problems.c -o practice_problems`
-
-2. Run the program: `./practice_problems` (Linux/Mac) or `.\practice_problems.exe` (Windows)
-
-
+* C programming practice problems
+* HTML and CSS web pages
+* JavaScript mini projects
+* Beginner-friendly project practice
 
 ---
 
+## 🛠 Technologies Used
 
-
-## Project 2: Safe Travel Website (Quest Travel)
-
-
-
-A modern travel website showcasing India's best destinations with a beautiful hero section, search functionality, and informative content sections.
-
-
-
-### Features
-
-- Responsive navigation bar with menu toggle
-
-- Hero section with animated text and search functionality
-
-- Highlights section (Scenic Beauty, Local Cuisine, Rich Heritage)
-
-- Testimonials section with customer reviews
-
-- Social media footer with links
-
-- Project navigation (Previous/Next/Home buttons)
-
-- Animations and hover effects
-
-
-
-### Concepts Used
-
-- HTML5 semantic structure
-
-- CSS3 animations and transitions
-
-- Flexbox layout
-
-- Responsive design with media queries
-
-- Font Awesome icons integration
-
-- Background images with overlay effects
-
-- Glassmorphism styling
-
-
-
-### Files
-
-- `safe_travel.html` - Main HTML structure
-
-- `save_travel.css` - Styling and animations
-
-
-
-### How to Run
-
-1. Open `safe_travel.html` in a web browser
-
-2. Or use a local server: `python -m http.server` then open http://localhost:8000/safe_travel.html
-
-
+* C
+* HTML
+* CSS
+* JavaScript
+* Git and GitHub
 
 ---
 
+## 📁 Folder Structure
 
-
-## Project 3: Personal Landing Page
-
-
-
-A personal portfolio landing page for a CSE student with modern design and social media integration.
-
-
-
-### Features
-
-- Navigation bar with search functionality
-
-- Hero section with personal introduction
-
-- Decorative circle elements
-
-- Social media icons (Facebook, YouTube, LinkedIn, Twitter)
-
-- Action buttons (About Me, Follow Me)
-
-- Modern and clean design
-
-
-
-### Concepts Used
-
-- HTML5 structure
-
-- CSS styling
-
-- Font Awesome icons
-
-- Responsive layout design
-
-
-
-### Files
-
-- `landing_page.html` - Main HTML structure
-
-- `landing_page.css` - Styling (to be completed)
-
-
-
-### How to Run
-
-1. Open `landing_page.html` in a web browser
-
-2. Or use a local server: `python -m http.server` then open http://localhost:8000/landing_page.html
-
-
-
-## project 4:to do list
-
-this is a simple to do list application which is build using html, css and javascript
-
-
-
-### Features
-- Add tasks(Click on the + button to add a new task)
-- Mark tasks as complete(Click on the task to mark it as complete)
-- Delete tasks(Click on the delete button to delete a task)
-- Local storage(All tasks are saved in your browser)
-
-
-
-### Concepts Used
-- HTML5 structure
-- CSS3 styling
-- JavaScript for task management
-- Local storage for data persistence
-
-
-
-### Files
-- `todo_list.html` - Main HTML structure
-
-
-- `todo_list.css` - Styling
-
-
-- `todo_list.js` - JavaScript functionality
-
-
-### How to Run
-1. Open `small_project.html` in a web browser
-
-2. Click on the "To Do List" project to open the to do list application
-
-
+```text
+Learning_path/
+├── c_practics/
+│   └── practice_problems.c
+│
+├── HTML_CSS/
+│   ├── landing_page/
+│   │   ├── index.html
+│   │   └── style.css
+│   │
+│   ├── travel_page/
+│   │   ├── index.html
+│   │   └── style.css
+│   │
+│   └── small_praoject/
+│       ├── Todo_list.html
+│       └── calculator.html
+│
+└── README.md
+```
 
 ---
 
-## Project 5: Simple Calculator
+## 📚 Projects
 
-A simple calculator application built with HTML, CSS, and JavaScript that performs basic arithmetic operations with a modern and colorful interface.
+### 1. C Practice Problems
 
-### Features
-- Addition, subtraction, multiplication, and division operations
-- Two number input fields with validation
-- Colorful operation buttons with Font Awesome icons
-- Real-time result display
-- Reset functionality to clear inputs and results
-- Input validation (checks for empty inputs and division by zero)
-- Modern UI with hover effects and smooth transitions
+A collection of basic C programming problems for learning programming fundamentals.
 
-### Concepts Used
-- HTML5 form inputs
-- CSS3 styling with flexbox layout
-- JavaScript event listeners
-- DOM manipulation
-- Input validation
-- Font Awesome icons integration
-- CSS transitions and hover effects
+**Topics practiced:**
 
-### Files
-- `simple_calculator.html` - Complete calculator application (HTML, CSS, and JavaScript in one file)
+* Input and output
+* Variables and data types
+* Arithmetic operations
+* Conditional statements
+* Switch statements
+* Basic problem solving
 
-### How to Run
-1. Open `simple_calculator.html` in a web browser
-2. Enter two numbers in the input fields
-3. Click on any operation button to see the result
-4. Click "Reset" to clear all inputs and results
+**Run the program:**
+
+```bash
+gcc practice_problems.c -o practice_problems
+./practice_problems
+```
+
+For Windows:
+
+```bash
+practice_problems.exe
+```
 
 ---
 
+### 2. Safe Travel Website
 
+A simple travel website created using HTML and CSS.
 
+**Features:**
 
-## Author
+* Navigation bar
+* Hero section
+* Travel highlights
+* Testimonials section
+* Footer with social links
+* Responsive design
 
-Your Name
+**Files:**
 
-**MUNNA KUMAR**
-
-**Email:** munnnakumargpj4321@gmail.com
-
-**LinkedIn:** https://www.linkedin.com/in/munna-kumar-4b2b2b2b2/
-
-**GitHub:** https://github.com/munnnakumargpj4321-prog
-
-**Portfolio:** https://munnnakumargpj4321-prog.github.io/
-
-
+```text
+HTML_CSS/travel_page/
+├── index.html
+└── style.css
+```
 
 ---
 
+### 3. Personal Landing Page
+
+A basic personal landing page for practice.
+
+**Features:**
+
+* Hero section
+* Navigation bar
+* Social media icons
+* Buttons
+* Clean layout
+
+**Files:**
+
+```text
+HTML_CSS/landing_page/
+├── index.html
+└── style.css
+```
+
+---
+
+### 4. To-Do List App
+
+A simple to-do list application built using HTML, CSS, and JavaScript.
+
+**Features:**
+
+* Add tasks
+* Mark tasks as completed
+* Delete tasks
+* Save tasks in local storage
+
+**Files:**
+
+```text
+HTML_CSS/small_praoject/
+└── Todo_list.html
+```
+
+---
+
+### 5. Simple Calculator
+
+A basic calculator project for practicing JavaScript.
+
+**Features:**
+
+* Addition
+* Subtraction
+* Multiplication
+* Division
+* Reset button
+* Input validation
+
+**Files:**
+
+```text
+HTML_CSS/small_praoject/
+└── calculator.html
+```
+
+---
+
+## 🚀 How to Use This Repository
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/munnnakumargpj4321-prog/Learning_path.git
+```
+
+2. Open the project folder:
+
+```bash
+cd Learning_path
+```
+
+3. Open any HTML file in your browser.
+
+4. For C programs, compile and run using GCC.
+
+---
+
+## 🎯 Goal
+
+My goal is to improve my programming skills through regular practice and small projects. This repository shows my learning progress step by step.
+
+---
+
+## 👤 Author
+
+**Munna Kumar**
+
+* GitHub: [munnnakumargpj4321-prog](https://github.com/munnnakumargpj4321-prog)
+* LinkedIn: [Munna Kumar](https://www.linkedin.com/in/munna-kumar-4b2b2b2b2/)
+* Portfolio: [Portfolio Website](https://munnnakumargpj4321-prog.github.io/)
+
+---
+
+## ⭐ Support
+
+If you find this repository useful, you can give it a star.
