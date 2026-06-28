@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(2vh, 3vmin, 3vw);
+            padding: 2vmin;
+            font-family: Arial, sans-serif;
+            background-color:antiquewhite;
+            color: #333;
+        }
+
+        h1 {
+            font-size: clamp(3vh, 5vmin, 6vw);
+            text-transform: capitalize;
+        }
+
+        .status {
+            min-height: 3vh;
+            font-size: clamp(2vh, 2.5vmin, 4vw);
+            font-weight: 600;
+        }
+
+
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, clamp(12vh, 18vmin, 24vw));
+            grid-template-rows: repeat(3, clamp(12vh, 18vmin, 24vw));
+        }
+
+        .cell {
+            border: 0;
+            border-right: 0.5vmin solid #333;
+            border-bottom: 0.5vmin solid #333;
+            background: transparent;
+            color: #333;
+            font-size: clamp(7vh, 9vmin, 12vw);
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .cell:nth-child(3n) {
+            border-right: 0;
+        }
+
+        .cell:nth-child(n + 7) {
+            border-bottom: 0;
+        }
+
+        .cell:focus-visible,
+        .reset:focus-visible {
+            outline: 0.4vmin solid #1d70b8;
+            outline-offset: 0.5vmin;
+        }
+
+        .cell:disabled {
+            cursor: default;
+        }
+
+        .reset {
+            padding: 1.5vh 2.5vw;
+            border: 0;
+            border-radius: 1vmin;
+            background-color: #333;
+            color: white;
+            font-size: clamp(2vh, 2.25vmin, 3.5vw);
+            cursor: pointer;
+        }
+
+        .reset:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <p class="status" aria-live="polite">Player X's turn</p>
+
+    <div class="board" aria-label="Tic-Tac-Toe board">
+        <button class="cell" type="button" aria-label="Top left"></button>
+        <button class="cell" type="button" aria-label="Top center"></button>
+        <button class="cell" type="button" aria-label="Top right"></button>
+        <button class="cell" type="button" aria-label="Middle left"></button>
+        <button class="cell" type="button" aria-label="Middle center"></button>
+        <button class="cell" type="button" aria-label="Middle right"></button>
+        <button class="cell" type="button" aria-label="Bottom left"></button>
+        <button class="cell" type="button" aria-label="Bottom center"></button>
+        <button class="cell" type="button" aria-label="Bottom right"></button>
+    </div>
+
+    <button class="reset" type="button">Reset game</button>
+
+    <script>
+        const cells = document.querySelectorAll('.cell');
+        const statusText = document.querySelector('.status');
+        const resetButton = document.querySelector('.reset');
+        const winningCombinations = [
+            [0, 1, 2], [3, 4, 5], [6, 7, 8],
+            [0, 3, 6], [1, 4, 7], [2, 5, 8],
+            [0, 4, 8], [2, 4, 6]
+        ];
+
+        let currentPlayer = 'X';
+        let gameActive = true;
+
+        function getWinner() {
+            for (const [first, second, third] of winningCombinations) {
+                const mark = cells[first].textContent;
+
+                if (mark && mark === cells[second].textContent && mark === cells[third].textContent) {
+                    return mark;
+                }
+            }
+
+            return null;
+        }
+        function playTurn(event) {
+            const cell = event.currentTarget;
+
+            if (!gameActive || cell.textContent) {
+                return;
+            }
+                  
+
+            cell.textContent = currentPlayer;
+            cell.setAttribute('aria-label', `${cell.getAttribute('aria-label')}: ${currentPlayer}`);
+
+            const winner = getWinner();
+
+            if (winner) {
+                statusText.textContent = `Player ${winner} wins!`;
+                gameActive = false;
+                cells.forEach((item) => {
+                    item.disabled = true;
+                });
+                return;
+            }
+
+            const isDraw = [...cells].every((item) => item.textContent);
+
+            if (isDraw) {
+                statusText.textContent = "It's a draw!";
+                gameActive = false;
+                return;
+            }
+
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+            statusText.textContent = `Player ${currentPlayer}'s turn`;
+        }
+        function resetGame() {
+            cells.forEach((cell) => {
+                cell.textContent = '';
+                cell.disabled = false;
+                cell.setAttribute('aria-label', cell.getAttribute('aria-label').split(':')[0]);
+            });
+
+            currentPlayer = 'X';
+            gameActive = true;
+            statusText.textContent = "Player X's turn";
+        }
+
+        cells.forEach((cell) => cell.addEventListener('click', playTurn));
+        resetButton.addEventListener('click', resetGame);
+    </script>
+</body>
+</html>
