@@ -19,6 +19,7 @@ This repository contains my programming practice and beginner-level projects. I 
 * HTML
 * CSS
 * JavaScript
+* Font Awesome
 * Git and GitHub
 
 ---
@@ -39,9 +40,18 @@ Learning_path/
 │   │   ├── index.html
 │   │   └── style.css
 │   │
-│   └── small_praoject/
-│       ├── Todo_list.html
-│       └── calculator.html
+│   ├── login page/
+│   │   ├── index.html
+│   │   └── style.css
+│   │
+│   ├── small_praoject/
+│   │   ├── todo list/
+│   │   │   └── Todo_list.html
+│   │   └── calculator/
+│   │       ├── calculator.html
+│   │       └── modern_calculator.html
+│   │
+│   └── seventeen.html
 │
 └── README.md
 ```
@@ -130,14 +140,14 @@ A simple to-do list application built using HTML, CSS, and JavaScript.
 **Features:**
 
 * Add tasks
-* Mark tasks as completed
 * Delete tasks
-* Save tasks in local storage
+* Empty-task validation
+* Responsive glass-style interface
 
 **Files:**
 
 ```text
-HTML_CSS/small_praoject/
+HTML_CSS/small_praoject/todo list/
 └── Todo_list.html
 ```
 
@@ -159,9 +169,35 @@ A basic calculator project for practicing JavaScript.
 **Files:**
 
 ```text
-HTML_CSS/small_praoject/
-└── calculator.html
+HTML_CSS/small_praoject/calculator/
+├── calculator.html
+└── modern_calculator.html
 ```
+
+---
+
+### 6. Login Form
+
+A responsive login form created using HTML and CSS.
+
+**Features:**
+
+* Email or phone and password fields
+* Facebook and Twitter login buttons
+* Remember-me and forgot-password options
+* Sign-up link
+* Animated glass-style design
+* Responsive layout for smaller screens
+
+**Files:**
+
+```text
+HTML_CSS/login page/
+├── index.html
+└── style.css
+```
+
+An additional login-form practice version is available at `HTML_CSS/seventeen.html`.
 
 ---
 
