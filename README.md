@@ -53,6 +53,9 @@ Learning_path/
 │   │
 │   └── seventeen.html
 │
+├── GAME'S/
+│   └── tic_tac_toe.html
+│
 └── README.md
 ```
 
@@ -198,6 +201,27 @@ HTML_CSS/login page/
 ```
 
 An additional login-form practice version is available at `HTML_CSS/seventeen.html`.
+
+---
+
+### 7. Tic-Tac-Toe Game
+
+A responsive two-player Tic-Tac-Toe game built with HTML, CSS, and JavaScript.
+
+**Features:**
+
+* Alternating turns for players X and O
+* Win and draw detection
+* Game-status messages
+* Reset button
+* Responsive layout and accessible controls
+
+**Files:**
+
+```text
+GAME'S/
+└── tic_tac_toe.html
+```
 
 ---
 
