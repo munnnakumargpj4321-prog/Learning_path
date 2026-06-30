@@ -1,0 +1,1032 @@
+/*
+ * Responsive, page-scoped repairs for the original demos.
+ * Every rule begins with a project body class so similarly named IDs and
+ * elements in another demo can never affect it.
+ */
+.project-page,
+.project-page * {
+    box-sizing: border-box;
+}
+
+body.project-page {
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.project-page img {
+    max-width: 100%;
+}
+
+.project-page footer,
+.project-page footer * {
+    box-sizing: border-box;
+}
+
+.project-page footer p,
+.project-page .footer-links {
+    position: static;
+    inset: auto;
+    width: auto;
+    height: auto;
+    transform: none;
+}
+
+.project-page footer * {
+    background-color: transparent;
+}
+
+/* Project 1 */
+.project-1 .navbar {
+    min-height: 64px;
+    height: auto;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.project-1 > h1 {
+    max-width: 900px;
+    margin: clamp(5rem, 14vw, 11rem) auto 1rem;
+    padding-inline: 1rem;
+    font-size: clamp(2.25rem, 6vw, 4.5rem);
+}
+
+.project-1 > p {
+    max-width: 760px;
+    margin: 1rem auto;
+    padding-inline: 1rem;
+    font-size: clamp(1rem, 2.4vw, 1.4rem);
+}
+
+.project-1 .explore-btn {
+    margin: 1.5rem auto;
+}
+
+/* Project 2 */
+.project-2 .hero-container {
+    min-height: 680px;
+    height: min(100vh, 900px);
+}
+
+.project-2 .navbar {
+    gap: 1rem;
+}
+
+.project-2 .hero-title {
+    position: absolute;
+    inset: 27% 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.project-2 .hero-title #big,
+.project-2 .hero-title #big2,
+.project-2 .hero-title #big3 {
+    position: static;
+    margin: 0;
+    transform: none;
+    font-size: clamp(2.2rem, 5vw, 4.75rem) !important;
+}
+
+.project-2 search {
+    display: flex;
+    align-items: center;
+    width: min(680px, calc(100% - 2rem));
+    min-height: 56px;
+    margin: 0 auto;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.project-2 #search1,
+.project-2 #search-input,
+.project-2 #search-btn {
+    position: static;
+}
+
+.project-2 #search-input {
+    flex: 1;
+    min-width: 0;
+}
+
+.project-2 #center {
+    width: min(680px, calc(100% - 2rem));
+}
+
+.project-2 #feature {
+    top: 67%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: calc(100% - 2rem);
+}
+
+/* Project 3 */
+.project-3 .top_bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    min-height: 76px;
+    height: auto;
+    padding: 0.9rem clamp(1rem, 4vw, 3rem);
+}
+
+.project-3 #landing-page,
+.project-3 #home,
+.project-3 #about,
+.project-3 #contact,
+.project-3 #search-container,
+.project-3 #search_bar,
+.project-3 #button1 {
+    position: static;
+    inset: auto;
+    margin: 0;
+}
+
+.project-3 .top_bar .nav-links {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+.project-3 #search-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.project-3 .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 430px;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.project-3 #welcome-text,
+.project-3 #firstpara,
+.project-3 #button2 {
+    position: static;
+    inset: auto;
+    margin: 0.75rem auto;
+}
+
+.project-3 #welcome-text {
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+}
+
+.project-3 .features-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    width: min(1000px, calc(100% - 2rem));
+    margin: -2.5rem auto 3rem;
+}
+
+.project-3 .features-container > div {
+    position: static;
+    inset: auto;
+    width: auto;
+    height: auto;
+    min-height: 160px;
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+/* Project 4 */
+.project-4 .navbar {
+    min-height: 64px;
+    height: auto;
+    justify-content: flex-start;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    padding: 0.75rem clamp(1rem, 4vw, 3rem);
+}
+
+.project-4 .navbar > a {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.project-4 .navbar #first {
+    margin-right: auto;
+}
+
+.project-4 #welcome {
+    margin: clamp(5rem, 12vw, 9rem) auto 1rem;
+    padding-inline: 1rem;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+}
+
+.project-4 #get-started {
+    margin: 1.5rem auto;
+}
+
+.project-4 .features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    width: min(900px, calc(100% - 2rem));
+    margin: 3rem auto;
+}
+
+.project-4 .features > div {
+    display: flex;
+    width: auto;
+    height: auto;
+    min-height: 150px;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+/* Project 5 */
+.project-5 .third-project {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    min-height: 68px;
+    padding: 0.75rem clamp(1rem, 5vw, 4rem);
+}
+
+.project-5 .third-project a {
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.project-5 .third-project #first {
+    margin-right: auto;
+}
+
+.project-5 .third-project-content {
+    display: grid;
+    grid-template-columns: minmax(240px, 420px) minmax(260px, 1fr);
+    align-items: center;
+    gap: clamp(2rem, 7vw, 6rem);
+    width: min(1100px, calc(100% - 2rem));
+    margin: clamp(3rem, 9vw, 8rem) auto 2rem;
+}
+
+.project-5 .third-project-content img {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    margin: 0;
+    object-fit: cover;
+}
+
+.project-5 .designer-intro {
+    margin: 0;
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+}
+
+.project-5 .designer-intro h1 {
+    margin: 0 0 0.75rem;
+}
+
+.project-5 .skill-item span {
+    animation: none;
+}
+
+/* Project 6 */
+.project-6 .fourth-project {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: min(1400px, calc(100% - 2rem));
+    min-height: 64px;
+    height: auto;
+    margin: 1rem auto;
+    padding: 0.75rem 1rem;
+}
+
+.project-6 .fourth-project a {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.project-6 .fourth-project #first {
+    margin-right: auto;
+}
+
+.project-6 .firstbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(1400px, calc(100% - 2rem));
+    min-height: 320px;
+    height: auto;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+}
+
+.project-6 #firstbar2,
+.project-6 #firstbar-p,
+.project-6 #explore-article {
+    margin: 0.75rem auto;
+}
+
+.project-6 #paragraf {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    line-height: 1.75;
+}
+
+.project-6 #about-our-blog,
+.project-6 #featured-posts {
+    max-width: 1100px;
+    margin: 3rem auto 1.25rem;
+    padding-inline: 1rem;
+}
+
+.project-6 #box1,
+.project-6 #box2 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: min(44%, 600px);
+    min-height: 130px;
+    height: auto;
+    margin: 1rem 2.5%;
+    padding: 1.5rem;
+}
+
+/* Project 7 */
+.project-7 {
+    background: #1a1110;
+    color: #fff;
+}
+
+.project-7 .topbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-height: 70px;
+    padding: 0.75rem clamp(1rem, 4vw, 3rem);
+}
+
+.project-7 .topbar > * {
+    margin: 0;
+}
+
+.project-7 .topbar #second {
+    margin-left: auto;
+}
+
+.project-7 .container {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+    align-items: center;
+    gap: clamp(2rem, 6vw, 6rem);
+    width: min(1200px, calc(100% - 2rem));
+    min-height: 620px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.project-7 .container h1,
+.project-7 .container p {
+    position: static;
+    inset: auto;
+    margin: 1rem 0;
+    transform: none;
+    text-align: left;
+}
+
+.project-7 .container h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+}
+
+.project-7 #img1 {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    margin: 0;
+}
+
+.project-7 #social-icons {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 0 auto 3rem;
+}
+
+/* Project 8 */
+.project-8 #upper-nav {
+    justify-content: flex-start;
+    gap: 1.25rem;
+    min-height: 76px;
+    padding: 0.75rem clamp(1rem, 5vw, 4rem);
+}
+
+.project-8 #upper-nav #N {
+    margin-right: auto;
+    font-size: clamp(3rem, 8vw, 5rem);
+}
+
+.project-8 #upper-nav > a,
+.project-8 #breadcrumb,
+.project-8 #breadcrumb-services,
+.project-8 #port {
+    position: static;
+    inset: auto;
+    margin: 0;
+}
+
+.project-8 #breadcrumb {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem clamp(1rem, 5vw, 4rem);
+}
+
+.project-8 #port {
+    margin: 2rem auto;
+}
+
+.project-8 .boxes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.25rem;
+    width: min(1400px, calc(100% - 2rem));
+    margin: 2rem auto;
+}
+
+.project-8 .boxes-container > div {
+    position: static !important;
+    inset: auto !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: 230px !important;
+    margin: 0 !important;
+    padding: 1rem;
+}
+
+/* Project 9 */
+.project-9 {
+    position: relative;
+    background: #221a16;
+    color: #1f2937;
+}
+
+.project-9 .login-visual {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.42;
+}
+
+.project-9 .login-card,
+.project-9 .social-login,
+.project-9 .help-section {
+    position: static;
+    inset: auto;
+    width: min(500px, calc(100% - 2rem));
+    height: auto;
+    margin: 1.5rem auto;
+    transform: none;
+}
+
+.project-9 .login-card {
+    min-height: 0;
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+.project-9 .login-card:hover,
+.project-9 .social-login:hover,
+.project-9 .help-section:hover {
+    transform: translateY(-4px);
+}
+
+.project-9 .login-card h1,
+.project-9 .login-card p,
+.project-9 .login-card input,
+.project-9 .login-card button,
+.project-9 .login-card a {
+    position: static;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    margin: 0.45rem 0;
+    transform: none;
+}
+
+.project-9 .login-card h1 {
+    width: auto;
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+}
+
+.project-9 .social-login a,
+.project-9 .help-section a,
+.project-9 .footer-links a {
+    display: inline-flex;
+    position: static;
+    inset: auto;
+    width: auto;
+    height: auto;
+    margin: 0.35rem;
+    background: transparent;
+    transform: none;
+}
+
+.project-9 .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0;
+    background: transparent;
+}
+
+.project-9 .login-card input,
+.project-9 .login-card button {
+    min-height: 48px;
+}
+
+/* Project 10 */
+.project-10,
+.project-10 * {
+    background-color: transparent;
+}
+
+.project-10 {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1.2fr);
+    align-items: center;
+    gap: 2rem clamp(2rem, 6vw, 6rem);
+    padding: clamp(2rem, 6vw, 5rem);
+    background: linear-gradient(135deg, #5c07ab, #2e1065);
+    color: #fff;
+}
+
+.project-10 .phone-mockup {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 660px;
+    margin: 0;
+    object-fit: cover;
+}
+
+.project-10 .login-title,
+.project-10 .login-description,
+.project-10 .login-card {
+    grid-column: 2;
+    position: static;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    transform: none;
+}
+
+.project-10 .login-title {
+    align-self: end;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+}
+
+.project-10 .login-card {
+    min-height: 420px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+}
+
+.project-10 .login-card p,
+.project-10 .login-card input,
+.project-10 .login-card button,
+.project-10 .login-card a {
+    position: static;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    margin: 0.35rem 0;
+    transform: none;
+}
+
+.project-10 .login-card input,
+.project-10 .login-card button {
+    min-height: 46px;
+}
+
+.project-10 .login-description {
+    max-width: 65ch;
+    line-height: 1.7;
+}
+
+.project-10 .security-note,
+.project-10 .help-links,
+.project-10 footer {
+    grid-column: 1 / -1;
+    position: static;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    transform: none;
+}
+
+.project-10 .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    position: static;
+    inset: auto;
+    width: auto;
+    height: auto;
+    margin: 1rem 0 0;
+    transform: none;
+}
+
+.project-10 .help-links a,
+.project-10 .footer-links a {
+    display: inline-flex;
+    position: static;
+    inset: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    background: transparent;
+    transform: none;
+}
+
+.project-10 .security-note,
+.project-10 .help-links {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.project-10 footer,
+.project-12 footer {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Project 11 */
+.project-11,
+.project-11 * {
+    width: auto;
+    height: auto;
+}
+
+.project-11 {
+    display: block;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #f5f5f5, #e7e4f7);
+}
+
+.project-11 .login-card,
+.project-11 .social-login,
+.project-11 .security-info {
+    position: static;
+    inset: auto;
+    width: min(440px, 100%);
+    height: auto;
+    margin: 1.25rem auto;
+    transform: none;
+}
+
+.project-11 .login-card {
+    min-height: 500px;
+    padding: 2.25rem;
+}
+
+.project-11 .login-card:hover {
+    transform: translateY(-4px);
+}
+
+.project-11 .login-card input,
+.project-11 .login-card button {
+    width: 100%;
+    min-height: 46px;
+}
+
+.project-11 .remember-me,
+.project-11 .remember-me input {
+    width: auto;
+}
+
+.project-11 footer {
+    position: static;
+    width: calc(100% + 2rem);
+    margin: 3rem -1rem -3rem;
+}
+
+.project-11 .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    position: static;
+    inset: auto;
+    width: auto;
+    height: auto;
+    margin: 1rem 0 0;
+    padding: 0;
+    background: transparent;
+    transform: none;
+}
+
+.project-11 .footer-links a {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+/* Project 12 */
+.project-12,
+.project-12 * {
+    background-color: transparent;
+}
+
+.project-12 {
+    min-height: 100vh;
+    background: #d84646;
+}
+
+.project-12 .main {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
+    align-items: center;
+    gap: 1.5rem 3rem;
+    width: min(1280px, calc(100% - 2rem));
+    height: auto;
+    margin: 1rem auto;
+    padding: clamp(1.25rem, 4vw, 3rem);
+    background: #fff;
+    border-radius: 18px;
+}
+
+.project-12 .site-menu {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.project-12 .site-menu > * {
+    position: static;
+    inset: auto;
+    margin: 0;
+}
+
+.project-12 .site-menu #website {
+    margin-right: auto;
+}
+
+.project-12 .hero-illustration {
+    grid-column: 2;
+    grid-row: 2 / span 3;
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.project-12 .main > h1,
+.project-12 .main > span,
+.project-12 .main > #second {
+    grid-column: 1;
+    position: static;
+    inset: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    transform: none;
+}
+
+.project-12 .main > h1 {
+    justify-content: flex-start;
+    font-size: clamp(2.5rem, 5vw, 4.25rem);
+}
+
+.project-12 .main > span {
+    display: block;
+    line-height: 1.65;
+    text-align: left;
+}
+
+.project-12 .para {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 1.5rem 2rem;
+    align-items: center;
+    margin: 2rem 0 0;
+    padding: 2rem;
+    color: #fff;
+    background: #d84646;
+    border-radius: 16px;
+}
+
+.project-12 #paraabout,
+.project-12 #img2,
+.project-12 #contact2,
+.project-12 #email2,
+.project-12 #phone2 {
+    position: static;
+    inset: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    transform: none;
+}
+
+.project-12 #paraabout {
+    grid-row: 1 / span 3;
+    line-height: 1.65;
+}
+
+.project-12 #img2 {
+    width: 220px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.project-12 #contact2,
+.project-12 #email2,
+.project-12 #phone2 {
+    color: #fff;
+}
+
+/* Project 13 */
+.project-13 .hero-section {
+    overflow: hidden;
+}
+
+.project-13 .destination-card {
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .project-2 .navbar .nav-links,
+    .project-2 #book-now,
+    .project-3 #search-container,
+    .project-4 .navbar search {
+        display: none;
+    }
+
+    .project-2 .hero-title {
+        top: 25%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-3 .top_bar {
+        flex-wrap: wrap;
+    }
+
+    .project-3 .features-container,
+    .project-4 .features,
+    .project-5 .third-project-content,
+    .project-7 .container,
+    .project-10,
+    .project-12 .main {
+        grid-template-columns: 1fr;
+    }
+
+    .project-5 .third-project-content {
+        text-align: center;
+    }
+
+    .project-6 .fourth-project,
+    .project-7 .topbar,
+    .project-8 #upper-nav {
+        flex-wrap: wrap;
+    }
+
+    .project-6 .fourth-project #first,
+    .project-7 .topbar #first,
+    .project-8 #upper-nav #N {
+        width: 100%;
+        margin: 0;
+    }
+
+    .project-6 #box1,
+    .project-6 #box2 {
+        display: flex;
+        width: calc(100% - 2rem);
+        margin: 0.75rem 1rem;
+    }
+
+    .project-7 .container h1,
+    .project-7 .container p {
+        text-align: center;
+    }
+
+    .project-7 .container #explore {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .project-10 .phone-mockup,
+    .project-10 .login-title,
+    .project-10 .login-description,
+    .project-10 .login-card {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .project-10 .phone-mockup {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .project-12 .site-menu,
+    .project-12 .hero-illustration,
+    .project-12 .main > h1,
+    .project-12 .main > span,
+    .project-12 .main > #second,
+    .project-12 .para {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .project-12 .para {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .project-12 #paraabout {
+        grid-row: auto;
+    }
+
+    .project-12 #img2 {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .project-1 .navbar,
+    .project-4 .navbar,
+    .project-5 .third-project {
+        justify-content: center;
+    }
+
+    .project-1 .navbar #first,
+    .project-4 .navbar #first,
+    .project-5 .third-project #first {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .project-3 .top_bar .nav-links {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .project-8 .boxes-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-8 .boxes-container > div {
+        min-height: 260px;
+    }
+
+    .project-10 {
+        padding: 2rem 1rem;
+    }
+
+    .project-13 .main-content {
+        margin-left: 0;
+    }
+
+    .project-13 .menu,
+    .project-13 .menu:hover {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+}

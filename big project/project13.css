@@ -1,0 +1,455 @@
+body {
+    background-color: #C33764;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Fixed Menu */
+.menu {
+    background: linear-gradient(to right, #6f0000, #200122);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.menu:hover {
+    width: 140px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ff6b6b;
+    transform: scale(1.1);
+}
+
+/* Main Content Wrapper */
+.main-content {
+    margin-left: 120px;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero-section img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+}
+
+#king {
+    font-size: 60px;
+    margin-bottom: 20px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+#king:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+#head1, #head2 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+#head1:hover, #head2:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+/* Small Icons */
+.small-icon {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.small-icon i {
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.small-icon i:hover {
+    transform: scale(1.3);
+    color: #ff6b6b;
+}
+
+/* Small Card */
+.small-card {
+    position: relative;
+    z-index: 10;
+    width: 400px;
+    padding: 30px;
+    background: linear-gradient(to right, #6f0000, #200122);
+    border-radius: 40px;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+}
+
+.small-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+#img2 {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+#img2:hover {
+    transform: scale(1.05);
+}
+
+#hidden {
+    color: #fff;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#smallsection {
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#explore {
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#explore:hover {
+    background-color: #ff6b6b;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+/* New Content Section */
+.new-content {
+    padding: 60px 40px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Destinations Section */
+.destinations-section {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.destinations-section h2 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.destination-card {
+    display: inline-block;
+    width: 280px;
+    padding: 30px;
+    margin: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    vertical-align: top;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.destination-card h3 {
+    color: #C33764;
+    margin: 10px 0;
+}
+
+.destination-card p {
+    color: #555;
+}
+
+/* Travel Tips */
+.travel-tips {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.travel-tips h2 {
+    color: #C33764;
+    margin-bottom: 20px;
+}
+
+.travel-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.travel-tips ul li {
+    padding: 12px 0;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.travel-tips ul li:hover {
+    color: #C33764;
+    padding-left: 10px;
+}
+
+.travel-tips ul li:last-child {
+    border-bottom: none;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.footer-links {
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #C33764;
+    transform: scale(1.2);
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.nav-btn {
+    padding: 12px 24px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #000;
+}
+
+.nav-btn:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .menu {
+        width: 100px;
+    }
+    
+    .main-content {
+        margin-left: 100px;
+    }
+    
+    .hero-section img {
+        width: 70%;
+    }
+    
+    #head1, #head2 {
+        font-size: 36px;
+    }
+    
+    .small-card {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: 80px;
+        font-size: 14px;
+        gap: 20px;
+    }
+    
+    .main-content {
+        margin-left: 80px;
+    }
+    
+    .hero-section {
+        padding: 20px;
+    }
+    
+    .hero-section img {
+        width: 100%;
+        opacity: 0.2;
+    }
+    
+    #head1, #head2 {
+        font-size: 28px;
+    }
+    
+    #king {
+        font-size: 40px;
+    }
+    
+    .small-icon {
+        gap: 20px;
+    }
+    
+    .small-icon i {
+        font-size: 20px;
+    }
+    
+    .small-card {
+        width: 300px;
+        padding: 20px;
+    }
+    
+    .destination-card {
+        width: 240px;
+        margin: 10px;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        width: 60px;
+        font-size: 12px;
+    }
+    
+    .main-content {
+        margin-left: 60px;
+    }
+    
+    #head1, #head2 {
+        font-size: 24px;
+    }
+    
+    #king {
+        font-size: 30px;
+    }
+    
+    .small-card {
+        width: 250px;
+    }
+    
+    .destination-card {
+        width: 200px;
+        padding: 20px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.menu {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.hero-section img {
+    animation: fadeIn 1s ease-out 0.3s;
+    animation-fill-mode: both;
+}
+
+.hero-text {
+    animation: fadeIn 0.8s ease-out 0.5s;
+    animation-fill-mode: both;
+}
+
+.small-icon {
+    animation: fadeIn 0.8s ease-out 0.7s;
+    animation-fill-mode: both;
+}
+
+.small-card {
+    animation: fadeIn 0.8s ease-out 0.9s;
+    animation-fill-mode: both;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Text Selection */
+::selection {
+    background-color: #C33764;
+    color: #fff;
+}

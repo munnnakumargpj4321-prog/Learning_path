@@ -1,0 +1,700 @@
+*{
+    background-color: antiquewhite;
+    text-decoration: none;
+}
+#upper-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+}
+#N{
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.3s ease;
+}
+#N:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+#first{
+    text-decoration: none;
+        position: relative;
+        left: 785px;
+        transition: all 0.3s ease;
+}
+#first:hover {
+    color: #d88220;
+    transform: scale(1.1);
+}
+#second{
+    text-decoration: none;
+    position: relative;
+    left: 280px;
+    transition: all 0.3s ease;
+}
+#second:hover {
+    color: #d88220;
+    transform: scale(1.1);
+}
+#third{
+    text-decoration: none;
+    position: relative;
+    left: 100px;
+    transition: all 0.3s ease;
+}
+#third:hover {
+    color: #d88220;
+    transform: scale(1.1);
+}
+#fourth{
+    text-decoration: none;
+    position: relative;
+    right: 200px;
+    transition: all 0.3s ease;
+}
+#fourth:hover {
+    color: #d88220;
+    transform: scale(1.1);
+}
+#breadcrumb{
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+}
+#breadcrumb-services{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 60px;
+    top: -1px;
+}
+#port{
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 120px;
+    height: 40px;
+    top:30px;
+    background-color: rgb(205, 205, 145);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40%;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+#port:hover {
+    background-color: #d88220;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(216, 130, 32, 0.4);
+}
+#port:active {
+    background-color: #9a6e0e;
+}
+#box1{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url(https://media.telanganatoday.com/wp-content/uploads/2025/04/Virat.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 255, 0.5);
+}
+#box2{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url(https://static.independent.co.uk/2023/11/15/17/15-bcd2ce2ebf3247c6947c8d69f1f0ee17.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box2:hover {
+    transform: scale(1.05);
+}
+#box3{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://e0.365dm.com/25/02/1600x900/skysports-virat-kohli-india_6837817.jpg?20250223171250');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    border-radius: 10px;
+    transition: all 0.1s ease;
+}
+#box3:hover {
+    transform: scale(1.05);
+}
+#box4{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://d16f573ilcot6q.cloudfront.net/wp-content/uploads/2024/11/Virat-Kohli-6.webp');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box4:hover {
+    transform: scale(1.05);
+}
+#box5{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://i.pinimg.com/originals/84/7d/c3/847dc3f7805a6daba02fe6ab2ada131a.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box5:hover {
+    transform: scale(1.05);
+}
+#box6{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://im.rediff.com/cricket/2022/sep/08vk.gif');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box6:hover {
+    transform: scale(1.05);
+}
+#box7{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://im.rediff.com/cricket/2022/sep/08vk.gif');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box7:hover {
+    transform: scale(1.05);
+}
+#box8{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://images.mid-day.com/images/images/2024/oct/koglldswf_d.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box8:hover {
+    transform: scale(1.05);
+}
+#box9{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200/lsci/db/PICTURES/CMS/348100/348105.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box9:hover {
+    transform: scale(1.05);
+}
+#box10{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://cdn.dnaindia.com/sites/default/files/styles/half/public/2021/08/18/991290-20210817193249.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box10:hover {
+    transform: scale(1.05);
+}
+#box11{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://wallpaperaccess.com/full/9251727.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box11:hover {
+    transform: scale(1.05);
+}
+#box12{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://wallpapercave.com/wp/wp7489540.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box12:hover {
+    transform: scale(1.05);
+}
+#box13{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://media.assettype.com/freepressjournal/2024-06/d43dbcd0-9f89-419e-b7e1-ce3d0994dd03/Kohli_six.jpg?width=1200');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box13:hover {
+    transform: scale(1.05);
+}
+#box14{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://img.einnews.com/ampsize/587893/virat-kohli.jpeg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box14:hover {
+    transform: scale(1.05);
+}
+#box15{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://cricshots.com/wp-content/uploads/2022/10/virat-kohli-india-pakistan-2022-t20.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box15:hover {
+    transform: scale(1.05);
+}
+#box16{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://im.rediff.com/cricket/2022/aug/18kohli.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box16:hover {
+    transform: scale(1.05);
+}
+#box17{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://e0.365dm.com/25/02/1600x900/skysports-virat-kohli-india_6837816.jpg?20250223162935');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box17:hover {
+    transform: scale(1.05);
+}
+#box18{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://images.hindustantimes.com/img/2022/03/02/1600x900/kohli-moments-getty_1646223398798_1646223407639.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box18:hover {
+    transform: scale(1.05);
+}
+#box19{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://wallpaperbat.com/img/1711117-cricket-news-virat-kohli-birthday-special-king-kohli-wallpaper-and-hd-image-for-free-download.jpg');
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box19:hover {
+    transform: scale(1.05);
+}
+#box20{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    background-image: url('https://wallpaperaccess.com/full/5497641.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.666);
+    transition: all 0.1s ease;
+}
+#box20:hover {
+    transform: scale(1.05);
+}
+
+.boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px;
+    gap: 30px;
+}
+
+.navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.nav-btn {
+    padding: 12px 24px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #000;
+}
+
+.nav-btn:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Keyframe Animations */
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-100px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(100px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounceIn {
+    0% { opacity: 0; transform: scale(0.3); }
+    50% { opacity: 1; transform: scale(1.05); }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+#upper-nav {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+#N {
+    animation: bounceIn 0.8s ease-out 0.2s;
+    animation-fill-mode: both;
+}
+
+#breadcrumb {
+    animation: slideInRight 0.6s ease-out 0.4s;
+    animation-fill-mode: both;
+}
+
+#box1 {
+    animation: slideInLeft 0.8s ease-out 0.6s;
+    animation-fill-mode: both;
+}
+
+#box2 {
+    animation: slideInRight 0.8s ease-out 0.8s;
+    animation-fill-mode: both;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #N {
+        font-size: 60px;
+    }
+    
+    #first {
+        left: 600px;
+    }
+    
+    #second {
+        left: 200px;
+    }
+    
+    #third {
+        left: 80px;
+    }
+    
+    #fourth {
+        right: 150px;
+    }
+    
+    #box1, #box2 {
+        width: 250px;
+        height: 250px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #upper-nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    
+    #N {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+    
+    #first, #second, #third, #fourth {
+        position: relative;
+        left: 0;
+        margin: 5px 10px;
+        font-size: 14px;
+    }
+    
+    #breadcrumb {
+        position: relative;
+        left: 0;
+        margin: 10px;
+    }
+    
+    #breadcrumb-services {
+        left: 0;
+        top: 0;
+    }
+    
+    #port {
+        position: relative;
+        left: 0;
+        top: 10px;
+    }
+    
+    #box1, #box2 {
+        width: 200px;
+        height: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 20px auto;
+        display: block;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #N {
+        font-size: 36px;
+    }
+    
+    #box1, #box2 {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Text Selection */
+::selection {
+    background-color: #d88220;
+    color: #fff;
+}
+
+/* Services Description */
+.services-description {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.services-description h2 {
+    color: #d88220;
+    margin-bottom: 15px;
+}
+
+.services-description p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.service-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.detail-item {
+    padding: 20px;
+    background: rgba(216, 130, 32, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+    transform: translateY(-5px);
+    background: rgba(216, 130, 32, 0.2);
+}
+
+.detail-item h3 {
+    color: #d88220;
+    margin-bottom: 10px;
+}
+
+.detail-item p {
+    color: #555;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.footer-links {
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #d88220;
+    transform: scale(1.2);
+}
