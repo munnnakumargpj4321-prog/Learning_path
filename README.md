@@ -1,266 +1,149 @@
 # Learning Path
 
-This repository contains my programming practice and beginner-level projects. I use this repo to improve my coding skills by practicing C programming, HTML, CSS, and JavaScript.
+This repository contains my programming practice, small applications, and beginner-friendly web projects. I use it to improve my skills in C, C++, Python, HTML, CSS, and JavaScript.
 
----
+## Technologies Used
 
-## 📌 What This Repository Includes
+- C
+- C++
+- Python and Tkinter
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome
+- Git and GitHub
 
-* C programming practice problems
-* HTML and CSS web pages
-* JavaScript mini projects
-* Beginner-friendly project practice
-
----
-
-## 🛠 Technologies Used
-
-* C
-* HTML
-* CSS
-* JavaScript
-* Font Awesome
-* Git and GitHub
-
----
-
-## 📁 Folder Structure
+## Repository Structure
 
 ```text
 Learning_path/
-├── c_practics/
-│   └── practice_problems.c
-│
-├── HTML_CSS/
-│   ├── landing_page/
-│   │   ├── index.html
-│   │   └── style.css
-│   │
-│   ├── travel_page/
-│   │   ├── index.html
-│   │   └── style.css
-│   │
-│   ├── login page/
-│   │   ├── index.html
-│   │   └── style.css
-│   │
-│   ├── small_praoject/
-│   │   ├── todo list/
-│   │   │   └── Todo_list.html
-│   │   └── calculator/
-│   │       ├── calculator.html
-│   │       └── modern_calculator.html
-│   │
-│   └── seventeen.html
-│
-├── GAME'S/
-│   └── tic_tac_toe.html
-│
-└── README.md
+|-- big project/                  # A hub containing 13 web design projects
+|-- collage_website/              # CBSE Public School website
+|-- c_practics/                   # Earlier C loop practice
+|-- GAME'S/                       # Browser games
+|-- HTML_CSS/                     # HTML and CSS practice projects
+|   |-- landing_page/
+|   |-- login page/
+|   |-- small_praoject/
+|   |   |-- amazon clon/
+|   |   |-- calculator/
+|   |   `-- todo list/
+|   `-- travel_page/
+|-- javascript project/           # JavaScript mini applications
+|-- programing language/          # C and C++ practice
+|   |-- c programing/
+|   `-- c++/
+|-- python/                       # Python applications
+`-- README.md
 ```
 
----
+## Featured Projects
 
-## 📚 Projects
+### CBSE Public School Website
 
-### 1. C Practice Problems
-
-A collection of basic C programming problems for learning programming fundamentals.
-
-**Topics practiced:**
-
-* Input and output
-* Variables and data types
-* Arithmetic operations
-* Conditional statements
-* Switch statements
-* Basic problem solving
-
-**Run the program:**
-
-```bash
-gcc practice_problems.c -o practice_problems
-./practice_problems
-```
-
-For Windows:
-
-```bash
-practice_problems.exe
-```
-
----
-
-### 2. Safe Travel Website
-
-A simple travel website created using HTML and CSS.
-
-**Features:**
-
-* Navigation bar
-* Hero section
-* Travel highlights
-* Testimonials section
-* Footer with social links
-* Responsive design
-
-**Files:**
+A school landing page with navigation, a hero section, school values, classes, library details, programs, and campus-life cards.
 
 ```text
-HTML_CSS/travel_page/
-├── index.html
-└── style.css
+collage_website/
+|-- index.html
+`-- style.css
 ```
 
----
+### JavaScript Note App
 
-### 3. Personal Landing Page
-
-A basic personal landing page for practice.
-
-**Features:**
-
-* Hero section
-* Navigation bar
-* Social media icons
-* Buttons
-* Clean layout
-
-**Files:**
+A responsive note-taking mini app that lets users add and delete notes. It includes empty-note validation and a 300-character input limit.
 
 ```text
-HTML_CSS/landing_page/
-├── index.html
-└── style.css
+javascript project/note_app.html
 ```
 
----
+### Project Hub
 
-### 4. To-Do List App
+A collection of 13 HTML and CSS designs, including landing pages, portfolio layouts, blogs, login forms, and other interface experiments. Open `big project/project.html` to browse the collection.
 
-A simple to-do list application built using HTML, CSS, and JavaScript.
+### Python Calculator
 
-**Features:**
-
-* Add tasks
-* Delete tasks
-* Empty-task validation
-* Responsive glass-style interface
-
-**Files:**
+A desktop calculator built with Python and Tkinter. It supports keyboard input, decimal values, parentheses, the four basic arithmetic operations, clear, and backspace.
 
 ```text
-HTML_CSS/small_praoject/todo list/
-└── Todo_list.html
+python/project/calculator/first_calculator_after_learning _python.py
 ```
 
----
+### C and C++ Practice
 
-### 5. Simple Calculator
+The programming-language folders contain exercises covering:
 
-A basic calculator project for practicing JavaScript.
-
-**Features:**
-
-* Addition
-* Subtraction
-* Multiplication
-* Division
-* Reset button
-* Input validation
-
-**Files:**
+- Input and output
+- Variables and data types
+- Arithmetic and calculations
+- Conditions and decision making
+- Loops, number series, and factorials
+- Basic problem solving
 
 ```text
-HTML_CSS/small_praoject/calculator/
-├── calculator.html
-└── modern_calculator.html
+programing language/
+|-- c programing/
+|   |-- 120_loops_solved_question.c
+|   `-- practice_problems.c
+`-- c++/
+    `-- Decision_Making.c++
 ```
 
----
+### HTML, CSS, and JavaScript Projects
 
-### 6. Login Form
+The repository also includes:
 
-A responsive login form created using HTML and CSS.
+- Safe Travel website
+- Personal landing page
+- Responsive login form
+- Amazon-style shopping page
+- To-do list app
+- Simple and modern calculators
+- Two-player Tic-Tac-Toe game with win and draw detection
 
-**Features:**
-
-* Email or phone and password fields
-* Facebook and Twitter login buttons
-* Remember-me and forgot-password options
-* Sign-up link
-* Animated glass-style design
-* Responsive layout for smaller screens
-
-**Files:**
-
-```text
-HTML_CSS/login page/
-├── index.html
-└── style.css
-```
-
-An additional login-form practice version is available at `HTML_CSS/seventeen.html`.
-
----
-
-### 7. Tic-Tac-Toe Game
-
-A responsive two-player Tic-Tac-Toe game built with HTML, CSS, and JavaScript.
-
-**Features:**
-
-* Alternating turns for players X and O
-* Win and draw detection
-* Game-status messages
-* Reset button
-* Responsive layout and accessible controls
-
-**Files:**
-
-```text
-GAME'S/
-└── tic_tac_toe.html
-```
-
----
-
-## 🚀 How to Use This Repository
+## How to Run the Projects
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/munnnakumargpj4321-prog/Learning_path.git
-```
+   ```bash
+   git clone https://github.com/munnnakumargpj4321-prog/Learning_path.git
+   cd Learning_path
+   ```
 
-2. Open the project folder:
+2. Open an HTML project's `index.html` file, or its main `.html` file, in a web browser.
 
-```bash
-cd Learning_path
-```
+3. Run the Python calculator:
 
-3. Open any HTML file in your browser.
+   ```bash
+   python "python/project/calculator/first_calculator_after_learning _python.py"
+   ```
 
-4. For C programs, compile and run using GCC.
+4. Compile and run a C program:
 
----
+   ```bash
+   gcc "programing language/c programing/practice_problems.c" -o practice_problems
+   ./practice_problems
+   ```
 
-## 🎯 Goal
+5. Compile and run the C++ practice program:
 
-My goal is to improve my programming skills through regular practice and small projects. This repository shows my learning progress step by step.
+   ```bash
+   g++ "programing language/c++/Decision_Making.c++" -o decision_making
+   ./decision_making
+   ```
 
----
+On Windows PowerShell, use `./practice_problems.exe` or `./decision_making.exe` after compilation.
 
-## 👤 Author
+## Goal
+
+My goal is to strengthen my programming fundamentals through regular practice and increasingly complete projects. This repository records that learning progress step by step.
+
+## Author
 
 **Munna Kumar**
 
-* GitHub: [munnnakumargpj4321-prog](https://github.com/munnnakumargpj4321-prog)
-* LinkedIn: [Munna Kumar](https://www.linkedin.com/in/munna-kumar-4b2b2b2b2/)
-* Portfolio: [Portfolio Website](https://munnnakumargpj4321-prog.github.io/)
+- GitHub: [munnnakumargpj4321-prog](https://github.com/munnnakumargpj4321-prog)
 
----
+## Support
 
-## ⭐ Support
-
-If you find this repository useful, you can give it a star.
+If you find this repository useful, consider giving it a star.
