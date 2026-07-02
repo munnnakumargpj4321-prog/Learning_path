@@ -22,6 +22,7 @@ Learning_path/
 |-- c_practics/                   # Earlier C loop practice
 |-- GAME'S/                       # Browser games
 |-- HTML_CSS/                     # HTML and CSS practice projects
+|   |-- debit card/               # Debit card UI design
 |   |-- landing_page/
 |   |-- login page/
 |   |-- small_praoject/
@@ -33,7 +34,11 @@ Learning_path/
 |-- programing language/          # C and C++ practice
 |   |-- c programing/
 |   `-- c++/
-|-- python/                       # Python applications
+|-- python/                       # Python applications and concept practice
+|   |-- full python concept/
+|   |   `-- tupple/               # Tuple examples and exercises
+|   `-- project/
+|       `-- calculator/
 `-- README.md
 ```
 
@@ -69,6 +74,24 @@ A desktop calculator built with Python and Tkinter. It supports keyboard input, 
 python/project/calculator/first_calculator_after_learning _python.py
 ```
 
+### Debit Card UI
+
+An HTML and CSS debit-card design featuring front and back card layouts, glassmorphism effects, gradients, card-holder details, a magnetic strip, and a signature area.
+
+```text
+HTML_CSS/debit card/
+|-- second.html
+`-- second.css
+```
+
+### Python Tuple Practice
+
+A collection of beginner-to-intermediate tuple exercises covering creation, indexing, slicing, methods, conversions, iteration, unpacking, nested tuples, searching, counting, and basic data analysis.
+
+```text
+python/full python concept/tupple/basic.py
+```
+
 ### C and C++ Practice
 
 The programming-language folders contain exercises covering:
@@ -99,6 +122,7 @@ The repository also includes:
 - Amazon-style shopping page
 - To-do list app
 - Simple and modern calculators
+- Debit card UI design
 - Two-player Tic-Tac-Toe game with win and draw detection
 
 ## How to Run the Projects
@@ -118,14 +142,22 @@ The repository also includes:
    python "python/project/calculator/first_calculator_after_learning _python.py"
    ```
 
-4. Compile and run a C program:
+4. Run the Python tuple exercises:
+
+   ```bash
+   python "python/full python concept/tupple/basic.py"
+   ```
+
+   The script asks for an item name near the end, so enter a value such as `pen` when prompted.
+
+5. Compile and run a C program:
 
    ```bash
    gcc "programing language/c programing/practice_problems.c" -o practice_problems
    ./practice_problems
    ```
 
-5. Compile and run the C++ practice program:
+6. Compile and run the C++ practice program:
 
    ```bash
    g++ "programing language/c++/Decision_Making.c++" -o decision_making

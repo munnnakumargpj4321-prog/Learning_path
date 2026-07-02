@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000000; 
+    background: -webkit-linear-gradient(to right, #434343, #000000); 
+    background: linear-gradient(to right, #434343, #000000); 
+}
+.box{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background: #8A2387; 
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387); 
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387); 
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+   top:100px;
+    left:355px;
+}  
+ 
+.box2{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background: #8A2387; 
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387); 
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387); 
+    border-radius: 50%;
+    align-items: center;
+    position: absolute; 
+    left:1000px;
+    top:450px;
+    transform: translate(-50%, -50%);
+}
+.main-content{
+    width:450px;
+    height: 280px;  
+    position: absolute;
+    top: 42%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    backface-visibility: hidden;
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.magnetic-strip {
+    width: 100%;
+    height: 40px;
+    background: #000;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.signature-strip {
+    width: 80%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.cvv {
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.back-text {
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.main-content .chip1{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #E94057;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+}
+.main-content .card-title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    position: absolute;
+    top: 5px;
+    left: 80px;
+    background: transparent;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+
+}
+.main-content .chip2{
+    position: absolute;
+    top: 25px;
+    font-size: 25px;
+    left: 370px;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    object-fit: cover;
+  
+}
+
+.main-content p.card-number1{
+    font-size: 19px;
+    position: absolute;
+    left: 40px;
+    top: 110px;
+    background: transparent;
+}
+.main-content p.card-number2{
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    left: 40px;
+    top: 140px;
+    background: transparent;
+}
+.main-content h1.card-holder{
+    font-size: 25px;
+    position: absolute;
+    left: 40px;
+    top: 210px;
+    background: transparent;
+}
+.main-content p.card-expiry{
+    font-size: 16px;
+    position: absolute;
+    left: 340px;
+    top: 210px;
+    background: transparent;
+}
+.main-content p.card-expiry-date{
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    left: 340px;
+    top: 230px;
+    background: transparent;
+}
+.main-content2{
+    width:450px;
+    height: 280px;  
+    position: absolute;
+    top:65%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    backface-visibility: hidden;
+}
+
+.smallpara{
+    font-size: 12px;
+    margin: 10px 20px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 15px;
+}
+.black{
+    width: 100%;
+    height: 48px;
+    background: #000000;
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.white{
+    width: 74%;
+    height: 45px;
+    border-radius: 20px;
+    color: black;    
+    background: #FFFFFF;    
+    position: relative;
+    top: 60px;
+    margin-left: 15px;
+    background: repeating-linear-gradient(
+        90deg,
+        #ffffff,
+        #ffffff 10px,
+        #f0f0f0 10px,
+        #f0f0f0 20px,
+        #ffffff 20px,
+        #ffffff 30px,
+        #e8e8e8 30px,
+        #e8e8e8 40px
+    );
+
+}
+.small_white{
+    position: absolute;
+    left: 310px;
+    top: 5px;
+    border-radius: 10px;
+    background:white;
+}
+h3{
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    font-size: 25px;
+    background: transparent;
+}
+.big{
+    position: absolute;
+    top: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background:transparent;
+    font-size: 15px;
+    color: white;
+}
