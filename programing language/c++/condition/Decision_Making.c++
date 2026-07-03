@@ -146,6 +146,16 @@ int main() {
         cout<<"triangle is scalene" << endl;
     }
     cout << "===================" << endl;
+    float a,b,c;
+    cout<<"enter three sides of a triangle:"<<endl;
+    cin>>a>>b>>c;
+    if(a==b && b==c){
+        cout<<"triangle is equilateral" << endl;
+    }else if(a==b || b==c || c==a){
+        cout<<"triangle is isosceles" << endl;
+    }else{
+        cout<<"triangle is scalene" << endl;
+    }
 
     return 0;
 }

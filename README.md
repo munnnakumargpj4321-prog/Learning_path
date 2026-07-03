@@ -87,7 +87,7 @@ Open any project’s main `.html` file in a browser. A good place to begin is [`
 
 ### Python projects
 
-Python 3 includes Tkinter on most standard installations.
+Install Python 3 with Tkinter support before running the desktop calculator.
 
 ```bash
 python "python/project/calculator/first_calculator_after_learning _python.py"
@@ -95,16 +95,18 @@ python "python/full python concept/tupple/basic.py"
 ```
 
 The tuple exercise asks for an item name near the end; enter a value such as `pen` when prompted.
+On Windows, use `py` instead of `python` if that is the launcher available on your system.
 
 ### C and C++ practice
 
 ```bash
-gcc "programing language/c programing/practice_problems.c" -o practice_problems
-g++ "programing language/c++/condition/Decision_Making.c++" -o decision_making
+gcc "programing language/c programing/120_loops_solved_question.c" -o loop_practice
 g++ "programing language/c++/loops/pattern.cpp" -o pattern
 ```
 
-Run the compiled file with `./practice_problems`, `./decision_making`, or `./pattern`. On Windows PowerShell, add the `.exe` extension.
+Run the compiled file with `./loop_practice` or `./pattern`. On Windows PowerShell, add the `.exe` extension.
+
+The larger C and C++ practice files collect works in progress and multiple exercises in one place, so they are best explored exercise by exercise.
 
 ## What I Am Learning
 
