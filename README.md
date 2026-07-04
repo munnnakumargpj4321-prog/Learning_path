@@ -6,7 +6,7 @@
 
 My hands-on collection of coding exercises, small applications, and web projects built while learning **C, C++, Python, HTML, CSS, and JavaScript**.
 
-[Explore Projects](#featured-projects) · [View Structure](#repository-structure) · [Get Started](#getting-started)
+[Explore Projects](#featured-projects) | [View Structure](#repository-structure) | [Get Started](#getting-started)
 
 ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
@@ -27,6 +27,7 @@ This repository documents my progress as I learn software development by buildin
 | --- | --- | --- |
 | [CBSE Public School Website](collage_website/school/index.html) | A multi-page school website with a hero section, navigation, programs, campus-life cards, and a dedicated About page | HTML, CSS |
 | [JavaScript Note App](javascript%20project/note_app.html) | A responsive note-taking app with input validation, a 300-character limit, and note deletion | HTML, CSS, JavaScript |
+| [Practice Website](HTML_CSS/Gelary/desine_my_page.html) | A gallery-style practice website with navigation, sections, image grids, and blog/contact layouts | HTML, CSS |
 | [Project Hub](big%20project/project.html) | A browsable collection of 13 landing pages, portfolios, blogs, login forms, and UI experiments | HTML, CSS |
 | [Tic-Tac-Toe](GAME'S/tic_tac_toe.html) | A responsive two-player game with turn tracking, win and draw detection, and game reset | HTML, CSS, JavaScript |
 | [Python Calculator](python/project/calculator/first_calculator_after_learning%20_python.py) | A Tkinter desktop calculator with keyboard input, parentheses, decimals, and error handling | Python, Tkinter |
@@ -35,6 +36,7 @@ This repository documents my progress as I learn software development by buildin
 ## More Projects and Practice
 
 - Responsive login, landing, travel, and Amazon-style shopping pages
+- A gallery-style practice website in `HTML_CSS/Gelary/`
 - Browser-based to-do list and calculator interfaces
 - Python tuple exercises covering slicing, unpacking, nesting, and basic analysis
 - C exercises covering input, calculations, conditions, loops, and problem solving
@@ -44,30 +46,31 @@ This repository documents my progress as I learn software development by buildin
 
 ```text
 first/
-├── big project/                  # Hub containing 13 web design projects
-├── collage_website/
-│   └── school/                   # Multi-page CBSE school website
-├── c_practics/                   # C loop practice
-├── GAME'S/                       # Browser games
-├── HTML_CSS/                     # HTML and CSS practice projects
-│   ├── debit card/
-│   ├── landing_page/
-│   ├── login page/
-│   ├── small_praoject/
-│   │   ├── amazon clon/
-│   │   ├── calculator/
-│   │   └── todo list/
-│   └── travel_page/
-├── javascript project/           # JavaScript mini applications
-├── programing language/
-│   ├── c programing/             # C exercises
-│   └── c++/
-│       ├── condition/            # Decision-making exercises
-│       └── loops/                # Pattern exercises
-├── python/
-│   ├── full python concept/      # Python concept practice
-│   └── project/calculator/       # Tkinter calculator
-└── README.md
+|-- README.md
+|-- big project/                  # Hub containing 13 web design projects
+|-- c_practics/                   # C loop practice
+|-- collage_website/
+|   `-- school/                   # Multi-page CBSE school website
+|-- GAME'S/                       # Browser games
+|-- HTML_CSS/                     # HTML and CSS practice projects
+|   |-- debit card/
+|   |-- Gelary/                   # Practice website and gallery layout
+|   |-- landing_page/
+|   |-- login page/
+|   |-- small_praoject/
+|   |   |-- amazon clon/
+|   |   |-- calculator/
+|   |   `-- todo list/
+|   `-- travel_page/
+|-- javascript project/           # JavaScript mini applications
+|-- programing language/
+|   |-- c programing/             # C exercises
+|   `-- c++/
+|       |-- condition/            # Decision-making exercises
+|       `-- loops/                # Pattern exercises
+`-- python/
+    |-- full python concept/      # Python concept practice
+    `-- project/calculator/       # Tkinter calculator
 ```
 
 > Some directory names preserve the names used when I first created them, making the repository itself a record of my learning journey.
@@ -83,7 +86,7 @@ cd first
 
 ### Web projects
 
-Open any project’s main `.html` file in a browser. A good place to begin is [`big project/project.html`](big%20project/project.html), which links to 13 web designs.
+Open any project's main `.html` file in a browser. A good place to begin is [`big project/project.html`](big%20project/project.html), which links to 13 web designs.
 
 ### Python projects
 
