@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Filter App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #667eea;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 35px;
+            margin: 10px 0 30px 0;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        #search {
+            height: 45px;
+            width: 350px;
+            border-radius: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            padding: 0 20px;
+            font-size: 16px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        #search:focus {
+            background: white;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        #search::placeholder {
+            color: #999;
+        }
+
+        .box {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .box ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .box li {
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .box li:hover {
+            background: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .box li.hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome, Sir</h1>
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search...">
+    </div>
+    <div class="box" id="box">
+        <ul>
+            <li>MUNNA</li>
+            <li>KUMAR</li>
+            <li>RAJA</li>
+            <li>ROHAN</li>
+            <li>JANVI</li>
+            <li>DEVDAS</li>
+            <li>BHANU</li>
+            <li>MOHAN</li>
+            <li>SOHAN</li>
+            <li>DANIEL</li>
+            <li>JACK</li>
+            <li>JOSEPH</li>
+            <li>JASON</li>
+            <li>JOHN</li>
+            <li>JAY</li>
+
+        </ul>
+    </div>
+    <script>
+        document.getElementById("search").addEventListener("input", function () {
+            var filter = this.value.toUpperCase();
+            var items = document.querySelectorAll("#box li");
+
+            items.forEach(function (item) {
+                var itemContent = item.textContent.toUpperCase();
+                if (itemContent.indexOf(filter) > -1) {
+                    item.classList.remove("hidden");
+                } else {
+                    item.classList.add("hidden");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
