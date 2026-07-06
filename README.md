@@ -19,7 +19,7 @@ My hands-on collection of coding exercises, small applications, and web projects
 
 ## About This Repository
 
-This repository documents my progress as I learn software development by building. It includes programming exercises for strengthening core concepts, responsive user interfaces, browser-based applications, and a desktop calculator made with Tkinter.
+This repository documents my progress as I learn software development by building. It includes programming exercises for strengthening core concepts, responsive user interfaces, browser-based applications, JavaScript mini apps, and a desktop calculator made with Tkinter.
 
 ## Featured Projects
 
@@ -27,6 +27,8 @@ This repository documents my progress as I learn software development by buildin
 | --- | --- | --- |
 | [CBSE Public School Website](collage_website/school/index.html) | A multi-page school website with a hero section, navigation, programs, campus-life cards, and a dedicated About page | HTML, CSS |
 | [JavaScript Note App](javascript%20project/note_app.html) | A responsive note-taking app with input validation, a 300-character limit, and note deletion | HTML, CSS, JavaScript |
+| [Search Filter App](javascript%20project/search_filter_app.html) | A live search interface that filters a list of names as you type | HTML, CSS, JavaScript |
+| [Interactive Counter Demo](javascript%20project/practics.html) | A pointer-based counter with press-and-hold counting, reset support, and animated feedback | HTML, CSS, JavaScript |
 | [Practice Website](HTML_CSS/Gelary/desine_my_page.html) | A gallery-style practice website with navigation, sections, image grids, and blog/contact layouts | HTML, CSS |
 | [Project Hub](big%20project/project.html) | A browsable collection of 13 landing pages, portfolios, blogs, login forms, and UI experiments | HTML, CSS |
 | [Tic-Tac-Toe](GAME'S/tic_tac_toe.html) | A responsive two-player game with turn tracking, win and draw detection, and game reset | HTML, CSS, JavaScript |
@@ -38,6 +40,7 @@ This repository documents my progress as I learn software development by buildin
 - Responsive login, landing, travel, and Amazon-style shopping pages
 - A gallery-style practice website in `HTML_CSS/Gelary/`
 - Browser-based to-do list and calculator interfaces
+- JavaScript practice apps in `javascript project/`, including a note app, a search filter, and an interactive counter demo
 - Python tuple exercises covering slicing, unpacking, nesting, and basic analysis
 - C exercises covering input, calculations, conditions, loops, and problem solving
 - C++ exercises covering decision making and loop-based pattern generation
@@ -62,7 +65,7 @@ first/
 |   |   |-- calculator/
 |   |   `-- todo list/
 |   `-- travel_page/
-|-- javascript project/           # JavaScript mini applications
+|-- javascript project/           # JavaScript mini applications (note app, search filter, counter demo)
 |-- programing language/
 |   |-- c programing/             # C exercises
 |   `-- c++/

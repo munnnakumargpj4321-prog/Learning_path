@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            isolation: isolate;
+            width: 100%;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+        }
+        img{
+            display: block;
+            max-width: 100vw;
+            max-height: 100vh;
+            max-height: 100dvh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            cursor: pointer;
+        }
+        #img1 {
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+            transition: transform 0.25s ease, filter 0.25s ease;
+            touch-action: none;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+
+        .heal-particle {
+            position: fixed;
+            z-index: 2;
+            left: 50%;
+            top: 55%;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            background: radial-gradient(circle, #f3fff8 0 18%, #79ffc1 35%, rgba(0, 255, 153, 0) 72%);
+            box-shadow: 0 0 10px rgba(0, 255, 153, 0.9);
+            pointer-events: none;
+            animation: healParticle var(--duration) cubic-bezier(0.2, 0.7, 0.3, 1) forwards;
+        }
+
+        body.healing #img1 {
+            animation: healPulse 1.1s ease-in-out infinite;
+            will-change: transform, filter;
+        }
+
+        @keyframes healPulse {
+            0%, 100% {
+                transform: scale(1);
+                filter: brightness(1.02) saturate(1.05) drop-shadow(0 0 4px rgba(0, 255, 153, 0.55));
+            }
+            50% {
+                transform: scale(1.025);
+                filter: brightness(1.13) saturate(1.22)
+                    drop-shadow(0 0 12px rgba(105, 255, 190, 0.9))
+                    drop-shadow(0 0 24px rgba(0, 255, 153, 0.45));
+            }
+        }
+
+        @keyframes healParticle {
+            0% {
+                opacity: 0;
+                transform: translate(var(--start-x), var(--start-y)) scale(0.25);
+            }
+            20% {
+                opacity: 1;
+            }
+            65% {
+                opacity: 0.75;
+            }
+            100% {
+                opacity: 0;
+                transform: translate(
+                    calc(var(--start-x) + var(--drift)),
+                    calc(var(--start-y) - var(--rise))
+                ) scale(1.15);
+            }
+        }
+
+        .count{
+            position: absolute;
+            z-index: 3;
+            top: 25%;
+            left: 65vw;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            background-color: black;
+            padding: 30px 30px 30px 30px;
+            border-radius: 50%;
+        }
+        .btn1{
+            display: none;
+        }
+        .btn2{
+            z-index: 3;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: black;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://plus.unsplash.com/premium_vector-1764241959506-69ff1329b13f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" id="img1">
+    <div class="count">0</div>
+    <button  class="btn1" id="level"></button>
+    <button  class="btn2">reset</button>
+
+    <script>
+        let count = 0;
+        const countElement = document.querySelector('.count');
+        const btn1 = document.querySelector('.btn1');
+        const btn2 = document.querySelector('.btn2');
+        const image = document.querySelector('#img1');
+        let holdTimeout;
+        let holdInterval;
+        let healingEndTimeout;
+
+        function increaseCount() {
+            count++;
+            countElement.textContent = count;
+
+            if (document.body.classList.contains('healing')) {
+                createHealingParticles(2);
+            }
+        }
+
+        function createHealingParticles(amount) {
+            for (let i = 0; i < amount; i++) {
+                const particle = document.createElement('span');
+                const duration = 700 + Math.random() * 650;
+
+                particle.className = 'heal-particle';
+                particle.style.setProperty('--size', `${5 + Math.random() * 9}px`);
+                particle.style.setProperty('--start-x', `${-190 + Math.random() * 380}px`);
+                particle.style.setProperty('--start-y', `${20 + Math.random() * 100}px`);
+                particle.style.setProperty('--drift', `${-55 + Math.random() * 110}px`);
+                particle.style.setProperty('--rise', `${130 + Math.random() * 170}px`);
+                particle.style.setProperty('--duration', `${duration}ms`);
+
+                document.body.appendChild(particle);
+                setTimeout(function() {
+                    particle.remove();
+                }, duration);
+            }
+        }
+
+        btn1.addEventListener('click', increaseCount);
+
+        function startIncreasing(event) {
+            if (event.pointerType === 'mouse' && event.button !== 0) return;
+
+            event.preventDefault();
+            image.setPointerCapture(event.pointerId);
+            clearTimeout(healingEndTimeout);
+            document.body.classList.add('healing');
+            increaseCount();
+
+            holdTimeout = setTimeout(function() {
+                holdInterval = setInterval(increaseCount, 100);
+            }, 350);
+        }
+
+        function stopIncreasing() {
+            clearTimeout(holdTimeout);
+            clearInterval(holdInterval);
+            healingEndTimeout = setTimeout(function() {
+                document.body.classList.remove('healing');
+            }, 200);
+        }
+
+        image.addEventListener('pointerdown', startIncreasing);
+        image.addEventListener('pointerup', stopIncreasing);
+        image.addEventListener('pointercancel', stopIncreasing);
+        image.addEventListener('lostpointercapture', stopIncreasing);
+        image.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        
+        });
+
+        btn2.addEventListener('click', function() {
+            stopIncreasing();
+            count = 0;
+            countElement.textContent = count;
+        });
+    </script>
+</body>
+</html>
