@@ -92,7 +92,7 @@ From simple syntax to problem-solving practice.
 
 ### 🛠️ A Project Workshop
 
-Web pages, applications, interfaces, calculators, and browser games.
+Web pages, applications, interfaces, and browser games.
 
 Ideas are converted into code here.
 
@@ -557,6 +557,7 @@ Python practice includes:
 * Functions
 * Concept practice
 * Desktop application experiments
+* password genration system
 
 📂 [`python/`](python/)
 
@@ -715,6 +716,7 @@ first/
     └── project/
         └── calculator/
             └── Tkinter desktop calculator
+            └── password_generator.py
 ```
 
 > [!NOTE]
