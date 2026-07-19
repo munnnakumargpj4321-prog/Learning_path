@@ -426,7 +426,6 @@ A desktop calculator featuring keyboard input, decimals, parentheses, mathematic
 </td>
 </tr>
 </table>
-
 ---
 
 <div align="center">
@@ -488,6 +487,72 @@ A dual-purpose contact and login interface featuring a sliding desktop transitio
 `Responsive Forms` • `Transitions` • `DOM Events` • `Mobile UI`
 
 ### 🔗 [Explore Project →](HTML_CSS/login_send_message_page/responsive_login_page.html)
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+## 🎨 Tailwind CSS Service Page
+
+</div>
+
+<table>
+<tr>
+<td width="30%" align="center">
+
+### 🎨
+
+**Responsive Service Page**
+
+`HTML` `Tailwind CSS`
+
+</td>
+<td>
+
+A responsive service landing page featuring navigation, a hero section, service cards, and utility-first styling with Tailwind CSS.
+
+**Concepts explored**
+
+`Utility Classes` • `Responsive Design` • `Grid Layout` • `Hover Effects`
+
+### 🔗 [Explore Project →](project%20with%20tailwind%20CSS/index.html)
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+## ✊ Rock Paper Scissors
+
+</div>
+
+<table>
+<tr>
+<td width="30%" align="center">
+
+### ✊ 📄 ✂️
+
+**Browser Game**
+
+`HTML` `CSS` `JavaScript`
+
+</td>
+<td>
+
+An interactive Rock Paper Scissors game with player and computer choices, result tracking, and responsive visual feedback.
+
+**Concepts explored**
+
+`Game Logic` • `Random Choices` • `DOM Updates` • `Events`
+
+### 🔗 [Play / View Project →](javascript%20project/rock_paper_seasor.html)
 
 </td>
 </tr>
@@ -656,67 +721,109 @@ flowchart LR
 
 ```text
 first/
-│
-├── 📄 README.md
-│
-├── 🧩 big project/
-│   └── project.html
-│       └── Hub containing 13 web design projects
-│
-├── 🔵 c_practics/
-│   └── C loop practice
-│
-├── 🏫 collage_website/
-│   └── school/
-│       └── Multi-page CBSE school website
-│
-├── 🎮 GAME'S/
-│   └── Browser games
-│
-├── 🌐 HTML_CSS/
-│   │
-│   ├── 💳 debit card/
-│   │
-│   ├── 🎨 Gelary/
-│   │   └── Practice website and gallery layout
-│   │
-│   ├── 🚀 landing_page/
-│   │
-│   ├── 🔐 login page/
-│   │
-│   ├── 📩 login_send_message_page/
-│   │   └── Responsive contact and access portal
-│   │
-│   ├── 🧪 small_praoject/
-│   │   ├── 🛒 amazon clon/
-│   │   ├── 🧮 calculator/
-│   │   └── ✅ todo list/
-│   │
-│   └── ✈️ travel_page/
-│
-├── ⚡ javascript project/
-│   ├── Note application
-│   ├── Search filter
-│   └── Interactive counter
-│    
-├── 💻 programing language/
-│   │
-│   ├── 🔵 c programing/
-│   │   └── C exercises
-│   │
-│   └── ⚙️ c++/
+├── README.md
+├── practice_problems.exe
+├── big project/
+│   ├── hub.css
+│   ├── project.html
+│   ├── project1.html
+│   ├── project1_styles.css
+│   ├── project2.html
+│   ├── project2.css
+│   ├── project3.html
+│   ├── project3.css
+│   ├── project4.html
+│   ├── project4.css
+│   ├── project5.html
+│   ├── project5.css
+│   ├── project6.html
+│   ├── project6.css
+│   ├── project7.html
+│   ├── project7.css
+│   ├── project8.html
+│   ├── project8.css
+│   ├── project9.html
+│   ├── project9.css
+│   ├── project10.html
+│   ├── project10.css
+│   ├── project11.html
+│   ├── project11.css
+│   ├── project12.html
+│   ├── project12.css
+│   ├── project13.html
+│   ├── project13.css
+│   ├── project-layout-fixes.css
+│   ├── project-navigation.css
+│   ├── second.jpg
+│   └── third.jpg
+├── c_practics/
+│   ├── 120_loops_solved_question.c
+│   └── function.c
+├── GAME'S/
+│   ├── New folder/
+│   └── tic_tac_toe.html
+├── html/
+├── HTML_CSS/
+│   ├── New folder/
+│   ├── debit card/
+│   │   ├── second.html
+│   │   └── second.css
+│   ├── Gelary/
+│   │   ├── desine_my_page.html
+│   │   └── desine_my_page.css
+│   ├── landing_page/
+│   │   ├── index.html
+│   │   └── style.css
+│   ├── login page/
+│   │   ├── index.html
+│   │   └── style.css
+│   ├── login_send_message_page/
+│   │   ├── responsive_login_page.html
+│   │   └── responsive_login_page.css
+│   ├── small_praoject/
+│   │   ├── amazon clon/
+│   │   │   ├── index.html
+│   │   │   └── style.css
+│   │   ├── calculator/
+│   │   │   ├── calculator.html
+│   │   │   └── modern_calculator.html
+│   │   └── todo list/
+│   │       └── Todo_list.html
+│   └── travel_page/
+│       ├── index.html
+│       └── style.css
+├── javascript project/
+│   ├── note_app.html
+│   ├── practics.html
+│   ├── rock_paper_seasor.html
+│   ├── search_filter_app.html
+│   └── tic_tok_game.html
+├── programing language/
+│   ├── c programing/
+│   │   ├── 120_loops_solved_question.c
+│   │   └── practice_problems.c
+│   └── c++/
 │       ├── condition/
+│       │   └── Decision_Making.c++
 │       └── loops/
-│
-└── 🐍 python/
-    │
+│           └── pattern.cpp
+├── project with tailwind CSS/
+│   └── index.html
+└── python/
     ├── full python concept/
-    │   └── Python concept practice
-    │
+    │   └── tupple/
+    │       └── basic.py
     └── project/
-        └── calculator/
-            └── Tkinter desktop calculator
-            └── password_generator.py
+        ├── calculator/
+        │   └── first_calculator_after_learning _python.py
+        ├── math paroblem/
+        │   └── math_problem.py
+        ├── password/
+        │   └── password_genrator.py
+        └── tkinter/
+            ├── entry_box_with_tk.py
+            ├── lebal_in_tk.py
+            └── text_witter_with_tk.py
 ```
 
 > [!NOTE]
