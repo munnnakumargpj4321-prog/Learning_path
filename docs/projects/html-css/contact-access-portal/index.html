@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Access Portal</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="mobile-tabs-container">
+        <button class="mobile-tab active" id="mob-msg-btn">
+            <i class="fa-regular fa-comment-dots"></i> Message
+        </button>
+        <button class="mobile-tab" id="mob-login-btn">
+            <i class="fa-solid fa-right-to-bracket"></i> Sign In
+        </button>
+    </div>
+
+    <div class="project" id="project">
+
+        <div class="form-container message-container">
+            <form action="">
+                <div class="form-header">
+                    <h1>Send A Message</h1>
+                    <p>We'd love to hear from you. Please fill out the form below.</p>
+                </div>
+                <div class="input-group">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" placeholder="Enter Your Name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-regular fa-comment input-icon message-icon"></i>
+                    <textarea name="message" placeholder="Enter Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="form-container login-container">
+            <form action="">
+                <div class="form-header">
+                    <h1>Welcome Back</h1>
+                    <p>Enter your credentials to access your account.</p>
+                </div>
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock input-icon"></i>
+                    <input type="password" placeholder="Enter Your Password" required>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="submit-btn">
+                    Sign In
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=1935&auto=format&fit=crop"
+                        alt="Vibrant Gradient Abstract Graphic">
+                    <div class="overlay-overlay"></div>
+                    <div class="brand-info">
+                        <h2>Need Assistance?</h2>
+                        <p>Prefer writing directly? Go to our messaging portal instead.</p>
+                        <button class="ghost-btn" id="to-message-btn">
+                            <i class="fa-solid fa-arrow-left"></i> Send Message
+                        </button>
+                    </div>
+                </div>
+
+                <div class="overlay-panel overlay-right">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop"
+                        alt="Deep Blue Abstract Graphic">
+                    <div class="overlay-overlay"></div>
+                    <div class="brand-info">
+                        <h2>Already Registered?</h2>
+                        <p>Sign in to access secure dashboard and direct messaging settings.</p>
+                        <button class="ghost-btn" id="to-login-btn">
+                            Sign In <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const project = document.getElementById('project');
+        const toLoginBtn = document.getElementById('to-login-btn');
+        const toMessageBtn = document.getElementById('to-message-btn');
+
+        const mobMsgBtn = document.getElementById('mob-msg-btn');
+        const mobLoginBtn = document.getElementById('mob-login-btn');
+
+        toLoginBtn.addEventListener('click', () => {
+            project.classList.add('right-panel-active');
+        });
+
+        toMessageBtn.addEventListener('click', () => {
+            project.classList.remove('right-panel-active');
+        });
+
+        mobMsgBtn.addEventListener('click', () => {
+            project.classList.remove('right-panel-active');
+            mobMsgBtn.classList.add('active');
+            mobLoginBtn.classList.remove('active');
+        });
+
+        mobLoginBtn.addEventListener('click', () => {
+            project.classList.add('right-panel-active');
+            mobLoginBtn.classList.add('active');
+            mobMsgBtn.classList.remove('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# JavaScript and build output
+node_modules/
+dist/
+build/
+
+# Local environment and secret files
+.env
+.env.local
+.env.*.local
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
