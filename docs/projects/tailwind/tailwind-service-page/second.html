@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple responsive landing page built with Tailwind CSS.">
+    <title>Slate | Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-900 text-white shadow-lg">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8" aria-label="Main navigation">
+            <a href="#home" class="text-xl font-bold tracking-wide">Slate</a>
+
+            <div class="flex items-center gap-3 text-sm font-medium sm:gap-6 sm:text-base">
+                <a href="#home" class="text-sky-400 transition hover:text-sky-300">Home</a>
+                <a href="#about" class="text-slate-300 transition hover:text-white">About</a>
+                <a href="#services" class="text-slate-300 transition hover:text-white">Services</a>
+                <a href="#contact" class="text-slate-300 transition hover:text-white">Contact</a>
+                <a href="#help" class="hidden text-slate-300 transition hover:text-white sm:block">Help</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home" class="relative isolate flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-br from-slate-50 via-white to-sky-100"></div>
+        <div class="absolute left-1/2 top-24 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-sky-300/30 blur-3xl"></div>
+
+        <section class="mx-auto max-w-3xl py-24 text-center">
+            <span class="inline-flex rounded-full border border-sky-200 bg-sky-50 px-4 py-1.5 text-sm font-semibold text-sky-700">
+                Simple. Modern. Responsive.
+            </span>
+            <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+                Build something
+                <span class="text-sky-600">beautiful</span>
+            </h1>
+            <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+                A polished landing page created with Tailwind CSS, designed to look great on phones, tablets, and desktops.
+            </p>
+
+            <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                <button type="button" class="rounded-lg bg-slate-900 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-slate-300">
+                    Get started
+                </button>
+                <a href="#about" class="rounded-lg border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-700 shadow-sm transition hover:border-slate-400 hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-200">
+                    Learn more
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
